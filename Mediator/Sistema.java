@@ -1,16 +1,16 @@
 
 public class Sistema {
-	static ConcreteMediator Google = new ConcreteMediator();
+	static ConcreteMediator c = new ConcreteMediator();
 	
-	static compradorBrasil Victor = new compradorBrasil(Google) ;
-	static compradorFranca Miguel = new compradorFranca(Google);
-	static vendedorEUA Arthur = new vendedorEUA(Google);
+	static compradorBrasil A = new compradorBrasil(c) ;
+	static compradorFranca B = new compradorFranca(c);
+	static vendedorEUA V = new vendedorEUA(c);
 	
 	public static void main(String[] args) {
 		//funcoes para teste do programa
 		
-		if (Miguel.proporOferta(Miguel.getOfertaFR())) System.out.println("Vendido para o Miguel!");
-		if (Arthur.proporOferta(Arthur.getOfertaBR())) System.out.println("Vendido para o Arthur!");
+		if (A.proporOferta(A.getOfertaBR())) System.out.println("Vendido para o A!");
+		if (B.proporOferta(B.getOfertaFR())) System.out.println("Vendido para o B!");
 		
 		/*while(oferta < 10){
 			
